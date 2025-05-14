@@ -39,6 +39,8 @@
             button4 = new Button();
             pictureBox2 = new PictureBox();
             label1 = new Label();
+            label2 = new Label();
+            label3 = new Label();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -193,6 +195,26 @@
             label1.Size = new Size(324, 116);
             label1.TabIndex = 3;
             label1.Text = "Inicio";
+            label1.Click += label1_Click;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(513, 213);
+            label2.Name = "label2";
+            label2.Size = new Size(97, 15);
+            label2.TabIndex = 4;
+            label2.Text = "HOla mundoooo";
+            label2.Click += label2_Click;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(504, 261);
+            label3.Name = "label3";
+            label3.Size = new Size(97, 15);
+            label3.TabIndex = 5;
+            label3.Text = "HOla mundoooo";
             // 
             // menu
             // 
@@ -200,6 +222,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.WhiteSmoke;
             ClientSize = new Size(966, 600);
+            Controls.Add(label3);
+            Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(pictureBox2);
             Controls.Add(panel2);
@@ -224,5 +248,7 @@
         private Label label1;
         private Button button5;
         private Button button6;
+        private Label label2;
+        private Label label3;
     }
 }
