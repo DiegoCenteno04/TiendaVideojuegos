@@ -40,7 +40,6 @@
             Telefono = new DataGridViewTextBoxColumn();
             Correo = new DataGridViewTextBoxColumn();
             panel2 = new Panel();
-            textBox7 = new TextBox();
             label10 = new Label();
             textBox6 = new TextBox();
             label9 = new Label();
@@ -142,7 +141,6 @@
             // panel2
             // 
             panel2.BackColor = Color.DarkRed;
-            panel2.Controls.Add(textBox7);
             panel2.Controls.Add(label10);
             panel2.Controls.Add(textBox6);
             panel2.Controls.Add(label9);
@@ -163,13 +161,6 @@
             panel2.Name = "panel2";
             panel2.Size = new Size(346, 509);
             panel2.TabIndex = 6;
-            // 
-            // textBox7
-            // 
-            textBox7.Location = new Point(158, 391);
-            textBox7.Name = "textBox7";
-            textBox7.Size = new Size(162, 23);
-            textBox7.TabIndex = 21;
             // 
             // label10
             // 
@@ -454,7 +445,6 @@
         private TextBox textBox4;
         private Label label6;
         private TextBox textBox3;
-        private TextBox textBox7;
         private Label label10;
         private TextBox textBox6;
         private Label label9;
