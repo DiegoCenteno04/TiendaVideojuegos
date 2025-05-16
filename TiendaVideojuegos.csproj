@@ -9,13 +9,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="DataAccess\" />
     <Folder Include="Controllers\" />
     <Folder Include="Model\" />
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="ADO.Net.Client" Version="1.4.4" />
+    <PackageReference Include="ADO.Net.Client.Core" Version="1.4.5" />
     <PackageReference Include="FontAwesome.Sharp" Version="6.6.0" />
+    <PackageReference Include="InterBaseSql.Data.InterBaseClient" Version="10.0.3" />
   </ItemGroup>
 
   <ItemGroup>
