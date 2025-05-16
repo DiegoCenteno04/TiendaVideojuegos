@@ -61,6 +61,7 @@
             button2 = new Button();
             button3 = new Button();
             button4 = new Button();
+            textBox7 = new TextBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             panel2.SuspendLayout();
@@ -141,6 +142,7 @@
             // panel2
             // 
             panel2.BackColor = Color.DarkRed;
+            panel2.Controls.Add(textBox7);
             panel2.Controls.Add(label10);
             panel2.Controls.Add(textBox6);
             panel2.Controls.Add(label9);
@@ -392,6 +394,13 @@
             button4.UseVisualStyleBackColor = true;
             button4.Click += button4_Click;
             // 
+            // textBox7
+            // 
+            textBox7.Location = new Point(158, 391);
+            textBox7.Name = "textBox7";
+            textBox7.Size = new Size(162, 23);
+            textBox7.TabIndex = 21;
+            // 
             // Empleados
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -453,5 +462,6 @@
         private Button button2;
         private Button button3;
         private Button button4;
+        private TextBox textBox7;
     }
 }
