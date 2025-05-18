@@ -1,3 +1,5 @@
+using TiendaVideojuegos.View;
+
 namespace app_TiendaVideojuegos
 {
     public partial class menu : Form
@@ -9,7 +11,9 @@ namespace app_TiendaVideojuegos
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            Clientes cliente = new Clientes();
+            cliente.Show();
+            this.Hide();
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)

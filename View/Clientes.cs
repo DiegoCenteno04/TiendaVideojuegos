@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace TiendaVideojuegos.View
 {
-    public partial class Form2 : Form
+    public partial class Clientes : Form
     {
-        public Form2()
+        public Clientes()
         {
             InitializeComponent();
         }

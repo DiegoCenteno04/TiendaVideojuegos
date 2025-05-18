@@ -1,6 +1,6 @@
 ﻿namespace TiendaVideojuegos.View
 {
-    partial class Form2
+    partial class Clientes
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Clientes));
             panel1 = new Panel();
             panel2 = new Panel();
             label1 = new Label();
