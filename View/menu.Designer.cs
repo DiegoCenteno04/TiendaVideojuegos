@@ -54,9 +54,10 @@
             button3.ForeColor = Color.Black;
             button3.Image = (Image)resources.GetObject("button3.Image");
             button3.ImageAlign = ContentAlignment.MiddleLeft;
-            button3.Location = new Point(12, 310);
+            button3.Location = new Point(14, 413);
+            button3.Margin = new Padding(3, 4, 3, 4);
             button3.Name = "button3";
-            button3.Size = new Size(168, 52);
+            button3.Size = new Size(192, 69);
             button3.TabIndex = 2;
             button3.Text = "   Clientes";
             button3.UseVisualStyleBackColor = false;
@@ -72,9 +73,10 @@
             button2.ForeColor = Color.Black;
             button2.Image = (Image)resources.GetObject("button2.Image");
             button2.ImageAlign = ContentAlignment.MiddleLeft;
-            button2.Location = new Point(12, 239);
+            button2.Location = new Point(14, 319);
+            button2.Margin = new Padding(3, 4, 3, 4);
             button2.Name = "button2";
-            button2.Size = new Size(168, 52);
+            button2.Size = new Size(192, 69);
             button2.TabIndex = 1;
             button2.Text = "    Empleados";
             button2.UseVisualStyleBackColor = false;
@@ -91,8 +93,9 @@
             panel2.Controls.Add(button4);
             panel2.Controls.Add(button2);
             panel2.Location = new Point(0, 0);
+            panel2.Margin = new Padding(3, 4, 3, 4);
             panel2.Name = "panel2";
-            panel2.Size = new Size(193, 601);
+            panel2.Size = new Size(221, 801);
             panel2.TabIndex = 1;
             // 
             // button6
@@ -105,12 +108,14 @@
             button6.ForeColor = Color.Black;
             button6.Image = (Image)resources.GetObject("button6.Image");
             button6.ImageAlign = ContentAlignment.MiddleLeft;
-            button6.Location = new Point(12, 445);
+            button6.Location = new Point(14, 593);
+            button6.Margin = new Padding(3, 4, 3, 4);
             button6.Name = "button6";
-            button6.Size = new Size(168, 52);
+            button6.Size = new Size(192, 69);
             button6.TabIndex = 6;
             button6.Text = "  Proveedor";
             button6.UseVisualStyleBackColor = false;
+            button6.Click += button6_Click;
             // 
             // button5
             // 
@@ -122,9 +127,10 @@
             button5.ForeColor = Color.Black;
             button5.Image = (Image)resources.GetObject("button5.Image");
             button5.ImageAlign = ContentAlignment.MiddleLeft;
-            button5.Location = new Point(12, 378);
+            button5.Location = new Point(14, 504);
+            button5.Margin = new Padding(3, 4, 3, 4);
             button5.Name = "button5";
-            button5.Size = new Size(168, 52);
+            button5.Size = new Size(192, 69);
             button5.TabIndex = 5;
             button5.Text = "     Productos";
             button5.UseVisualStyleBackColor = false;
@@ -140,9 +146,10 @@
             button1.ForeColor = Color.DarkRed;
             button1.Image = (Image)resources.GetObject("button1.Image");
             button1.ImageAlign = ContentAlignment.MiddleLeft;
-            button1.Location = new Point(12, 513);
+            button1.Location = new Point(14, 684);
+            button1.Margin = new Padding(3, 4, 3, 4);
             button1.Name = "button1";
-            button1.Size = new Size(168, 52);
+            button1.Size = new Size(192, 69);
             button1.TabIndex = 4;
             button1.Text = "   Salir";
             button1.UseVisualStyleBackColor = false;
@@ -151,9 +158,10 @@
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(26, 12);
+            pictureBox1.Location = new Point(30, 16);
+            pictureBox1.Margin = new Padding(3, 4, 3, 4);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(139, 126);
+            pictureBox1.Size = new Size(159, 168);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 3;
             pictureBox1.TabStop = false;
@@ -168,9 +176,10 @@
             button4.ForeColor = Color.Black;
             button4.Image = (Image)resources.GetObject("button4.Image");
             button4.ImageAlign = ContentAlignment.MiddleLeft;
-            button4.Location = new Point(12, 167);
+            button4.Location = new Point(14, 223);
+            button4.Margin = new Padding(3, 4, 3, 4);
             button4.Name = "button4";
-            button4.Size = new Size(168, 52);
+            button4.Size = new Size(192, 69);
             button4.TabIndex = 0;
             button4.Text = "Inicio";
             button4.UseVisualStyleBackColor = false;
@@ -179,9 +188,10 @@
             // pictureBox2
             // 
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(193, 0);
+            pictureBox2.Location = new Point(221, 0);
+            pictureBox2.Margin = new Padding(3, 4, 3, 4);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(773, 148);
+            pictureBox2.Size = new Size(883, 197);
             pictureBox2.TabIndex = 2;
             pictureBox2.TabStop = false;
             // 
@@ -189,23 +199,24 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Tahoma", 72F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(399, 16);
+            label1.Location = new Point(456, 21);
             label1.Name = "label1";
-            label1.Size = new Size(324, 116);
+            label1.Size = new Size(406, 145);
             label1.TabIndex = 3;
             label1.Text = "Inicio";
             label1.Click += label1_Click;
             // 
             // menu
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.WhiteSmoke;
-            ClientSize = new Size(966, 600);
+            ClientSize = new Size(1104, 800);
             Controls.Add(label1);
             Controls.Add(pictureBox2);
             Controls.Add(panel2);
             Icon = (Icon)resources.GetObject("$this.Icon");
+            Margin = new Padding(3, 4, 3, 4);
             Name = "menu";
             StartPosition = FormStartPosition.CenterScreen;
             panel2.ResumeLayout(false);

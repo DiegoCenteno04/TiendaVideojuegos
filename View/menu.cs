@@ -56,5 +56,12 @@ namespace app_TiendaVideojuegos
             producto.Show();
             this.Hide();
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Proveedor provee = new Proveedor();
+            provee.Show();
+            this.Hide();
+        }
     }
 }
