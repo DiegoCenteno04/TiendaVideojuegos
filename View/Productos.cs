@@ -1,4 +1,5 @@
-﻿using System;
+﻿using app_TiendaVideojuegos;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -25,6 +26,13 @@ namespace TiendaVideojuegos.View
         private void label8_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            menu Menu = new menu();
+            Menu.Show();
+            this.Hide();
         }
     }
 }

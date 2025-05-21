@@ -49,5 +49,12 @@ namespace app_TiendaVideojuegos
         {
 
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Productos producto = new Productos();
+            producto.Show();
+            this.Hide();
+        }
     }
 }
