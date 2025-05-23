@@ -63,5 +63,10 @@ namespace app_TiendaVideojuegos
             provee.Show();
             this.Hide();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
