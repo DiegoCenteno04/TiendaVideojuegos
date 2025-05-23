@@ -10,7 +10,6 @@
 
   <ItemGroup>
     <Folder Include="Controllers\" />
-    <Folder Include="DataAccess\" />
     <Folder Include="Model\" />
   </ItemGroup>
 
@@ -21,6 +20,8 @@
     <PackageReference Include="ADO.Net.Client.Implementation" Version="1.4.4" />
     <PackageReference Include="FontAwesome.Sharp" Version="6.6.0" />
     <PackageReference Include="InterBaseSql.Data.InterBaseClient" Version="10.0.3" />
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="6.0.2" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.9.0" />
   </ItemGroup>
 
   <ItemGroup>

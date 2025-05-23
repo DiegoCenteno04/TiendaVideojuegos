@@ -37,7 +37,17 @@ namespace app_TiendaVideojuegos
 
         private void button4_Click(object sender, EventArgs e)
         {
+            ConexionBDD connection = new ConexionBDD();
+            var conn = connection.GetConnection();
 
+            if (conn != null && conn.State == System.Data.ConnectionState.Open)
+            {
+                MessageBox.Show("Conexión exitosa a la base de datos.");
+            }
+            else
+            {
+                MessageBox.Show("Error al conectar a la base de datos.");
+            }
         }
 
         private void label1_Click(object sender, EventArgs e)

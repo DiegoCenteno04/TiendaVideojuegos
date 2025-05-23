@@ -111,7 +111,7 @@
             // 
             // pictureBox3
             // 
-            pictureBox3.Image = Properties.Resources.juegos;
+            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
             pictureBox3.Location = new Point(450, 162);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(171, 161);

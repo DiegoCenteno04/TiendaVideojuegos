@@ -97,7 +97,7 @@
             panel2.Name = "panel2";
             panel2.Size = new Size(221, 801);
             panel2.TabIndex = 1;
-            panel2.Paint += this.panel2_Paint;
+            
             // 
             // button6
             // 
@@ -221,7 +221,7 @@
             Margin = new Padding(3, 4, 3, 4);
             Name = "menu";
             StartPosition = FormStartPosition.CenterScreen;
-            Load += this.menu_Load;
+           
             panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
