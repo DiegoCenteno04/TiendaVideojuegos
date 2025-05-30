@@ -96,9 +96,9 @@
             label2.ForeColor = Color.DarkRed;
             label2.Location = new Point(20, 243);
             label2.Name = "label2";
-            label2.Size = new Size(125, 29);
+            label2.Size = new Size(164, 29);
             label2.TabIndex = 5;
-            label2.Text = "Apellido: ";
+            label2.Text = "Contraseña: ";
             // 
             // txtPassword
             // 
@@ -106,6 +106,7 @@
             txtPassword.Font = new Font("Tahoma", 11.25F, FontStyle.Bold);
             txtPassword.Location = new Point(23, 277);
             txtPassword.Name = "txtPassword";
+            txtPassword.PasswordChar = '*';
             txtPassword.Size = new Size(299, 26);
             txtPassword.TabIndex = 6;
             // 

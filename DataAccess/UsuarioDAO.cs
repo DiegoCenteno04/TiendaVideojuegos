@@ -1,10 +1,5 @@
-﻿using Microsoft.VisualBasic.ApplicationServices;
-using System;
-using System.Collections.Generic;
+﻿using System;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using TiendaVideojuegos.Model;
 
 namespace TiendaVideojuegos.DataAccess
@@ -18,43 +13,51 @@ namespace TiendaVideojuegos.DataAccess
             this.connectionString = connectionString;
         }
 
-        private readonly ConexionBDD conexion;
+        // Elimina esta línea, ya no se usa ni inicializa.
+        // private readonly ConexionBDD conexion;
 
         public Usuario validarlogign(string username, string password)
         {
             Usuario user = null;
 
             string query = @"SELECT IdUsuario, IdRol, NombreUsuario, UserName, ContrasenaUsuario
-                        FROM Usuarios
-                        WHERE UserName = @username AND ContrasenaUsuario = @password";
+                             FROM Usuarios
+                             WHERE UserName = @username AND ContrasenaUsuario = @password";
             try
             {
                 using (SqlConnection conn = new SqlConnection(connectionString))
-            using (SqlCommand cmd = new SqlCommand(query, conn))
-            {
-                cmd.Parameters.AddWithValue("@username", username);
-                cmd.Parameters.AddWithValue("@password", password);
-
-                conn.Open();
-                using (SqlDataReader reader = cmd.ExecuteReader())
+                using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
-                    if (reader.Read())
+                    cmd.Parameters.AddWithValue("@username", username);
+                    cmd.Parameters.AddWithValue("@password", password);
+
+                    conn.Open(); // Aquí se abre la conexión
+                    using (SqlDataReader reader = cmd.ExecuteReader())
                     {
-                        user = new Usuario()
+                        if (reader.Read())
                         {
-                            IdUser = Convert.ToInt32(reader["IdUsuario"]),
-                            IdRol = Convert.ToInt32(reader["IdRol"]),
-                            NombreUsuario = reader["NombreUsuario"].ToString(),
-                            UserName = reader["UserName"].ToString(),
-                            PasswordUser = reader["ContrasenaUsuario"].ToString()
-                        };
+                            user = new Usuario()
+                            {
+                                IdUser = Convert.ToInt32(reader["IdUsuario"]),
+                                IdRol = Convert.ToInt32(reader["IdRol"]),
+                                NombreUsuario = reader["NombreUsuario"].ToString(),
+                                UserName = reader["UserName"].ToString(),
+                                PasswordUser = reader["ContrasenaUsuario"].ToString()
+                            };
+                        }
                     }
-                    
                 }
             }
+            catch (SqlException ex) // Captura errores específicos de SQL Server
+            {
+                Console.WriteLine("Error de base de datos en validación: " + ex.Message);
+                // Aquí podrías lanzar una excepción personalizada o mostrar un mensaje de error al usuario.
+                // Por ahora, al retornar 'null', el formulario mostrará "Usuario o contraseña incorrecta".
+                // Para depuración, es útil ver el mensaje completo.
             }
-            catch(Exception ex) {
-                Console.WriteLine("Error en validacion" + ex.Message);
+            catch (Exception ex) // Captura cualquier otra excepción
+            {
+                Console.WriteLine("Error inesperado en validación: " + ex.Message);
             }
             return user;
         }

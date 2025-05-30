@@ -1,39 +1,28 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Data.SqlClient;
-using System.Configuration;
-using TiendaVideojuegos.Model;
+using System.Configuration; // Necesario para ConfigurationManager
 
 public class ConexionBDD
 {
-    private readonly string connectionString =
-    ConfigurationManager.ConnectionStrings["MiConexion"].ConnectionString;
+    private readonly string connectionString;
+
+    public ConexionBDD()
+    {
+        // Asegúrate de que la referencia a System.Configuration esté añadida en tu proyecto.
+        // Clic derecho en 'Referencias' -> 'Agregar referencia...' -> 'Ensamblados' -> Buscar 'System.Configuration' y marcarlo.
+        if (ConfigurationManager.ConnectionStrings["MiConexion"] == null)
+        {
+            throw new InvalidOperationException("La cadena de conexión 'MiConexion' no se encontró en el archivo de configuración (App.config).");
+        }
+        this.connectionString = ConfigurationManager.ConnectionStrings["MiConexion"].ConnectionString;
+    }
 
     public SqlConnection GetConnection()
     {
-        SqlConnection connection = new SqlConnection(connectionString);
-        try
-        {
-            connection.Open();
-        }
-        catch (Exception ex)
-        {
-            Console.WriteLine("Error al abrir la conexión: " + ex.Message);
-        }
-        return connection;
+        // Solo devuelve una nueva instancia de SqlConnection. La apertura se hace en el DAO.
+        return new SqlConnection(connectionString);
     }
 
-    public void CloseConnection(SqlConnection connection)
-    {
-        if (connection != null && connection.State == System.Data.ConnectionState.Open)
-        {
-            connection.Close();
-        }
-    }
-
-   
-
+    // El método CloseConnection ya no es necesario aquí, ya que el 'using' en UsuarioDAO lo maneja.
+    // public void CloseConnection(SqlConnection connection) { ... }
 }
