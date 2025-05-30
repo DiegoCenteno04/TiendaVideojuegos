@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Configuration;
+using TiendaVideojuegos.Model;
 
 public class ConexionBDD
 {
@@ -32,5 +33,7 @@ public class ConexionBDD
             connection.Close();
         }
     }
+
+   
 
 }

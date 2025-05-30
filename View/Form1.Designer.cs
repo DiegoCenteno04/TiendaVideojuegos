@@ -31,10 +31,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             pictureBox2 = new PictureBox();
             label1 = new Label();
-            textBox1 = new TextBox();
+            txtUsername = new TextBox();
             button1 = new Button();
             label2 = new Label();
-            textBox2 = new TextBox();
+            txtPassword = new TextBox();
             pictureBox3 = new PictureBox();
             label3 = new Label();
             panel1 = new Panel();
@@ -65,14 +65,14 @@
             label1.TabIndex = 3;
             label1.Text = "Nombre: ";
             // 
-            // textBox1
+            // txtUsername
             // 
-            textBox1.BackColor = Color.White;
-            textBox1.Font = new Font("Tahoma", 11.25F, FontStyle.Bold);
-            textBox1.Location = new Point(23, 193);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(299, 26);
-            textBox1.TabIndex = 4;
+            txtUsername.BackColor = Color.White;
+            txtUsername.Font = new Font("Tahoma", 11.25F, FontStyle.Bold);
+            txtUsername.Location = new Point(23, 193);
+            txtUsername.Name = "txtUsername";
+            txtUsername.Size = new Size(299, 26);
+            txtUsername.TabIndex = 4;
             // 
             // button1
             // 
@@ -100,14 +100,14 @@
             label2.TabIndex = 5;
             label2.Text = "Apellido: ";
             // 
-            // textBox2
+            // txtPassword
             // 
-            textBox2.BackColor = Color.White;
-            textBox2.Font = new Font("Tahoma", 11.25F, FontStyle.Bold);
-            textBox2.Location = new Point(23, 277);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(299, 26);
-            textBox2.TabIndex = 6;
+            txtPassword.BackColor = Color.White;
+            txtPassword.Font = new Font("Tahoma", 11.25F, FontStyle.Bold);
+            txtPassword.Location = new Point(23, 277);
+            txtPassword.Name = "txtPassword";
+            txtPassword.Size = new Size(299, 26);
+            txtPassword.TabIndex = 6;
             // 
             // pictureBox3
             // 
@@ -138,9 +138,9 @@
             panel1.BackColor = Color.WhiteSmoke;
             panel1.Controls.Add(pictureBox1);
             panel1.Controls.Add(button1);
-            panel1.Controls.Add(textBox2);
+            panel1.Controls.Add(txtPassword);
             panel1.Controls.Add(label2);
-            panel1.Controls.Add(textBox1);
+            panel1.Controls.Add(txtUsername);
             panel1.Controls.Add(label1);
             panel1.Location = new Point(0, 1);
             panel1.Name = "panel1";
@@ -186,10 +186,10 @@
 
         private PictureBox pictureBox2;
         private Label label1;
-        private TextBox textBox1;
+        private TextBox txtUsername;
         private Button button1;
         private Label label2;
-        private TextBox textBox2;
+        private TextBox txtPassword;
         private PictureBox pictureBox3;
         private Label label3;
         private Panel panel1;
