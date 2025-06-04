@@ -119,5 +119,15 @@ namespace TiendaVideojuegos.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap return_up_back_icon_234820 {
+            get {
+                object obj = ResourceManager.GetObject("return_up_back_icon_234820", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
