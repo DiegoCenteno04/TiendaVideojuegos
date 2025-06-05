@@ -69,7 +69,7 @@ namespace app_TiendaVideojuegos
 
         private void button6_Click(object sender, EventArgs e)
         {
-            Proveedor provee = new Proveedor();
+            Proveedores provee = new Proveedores();
             provee.Show();
             this.Hide();
         }

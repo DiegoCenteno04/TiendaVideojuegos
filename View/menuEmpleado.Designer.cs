@@ -38,6 +38,7 @@
             button3 = new Button();
             button2 = new Button();
             label1 = new Label();
+            button6 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -56,6 +57,7 @@
             // panel2
             // 
             panel2.BackColor = Color.DarkRed;
+            panel2.Controls.Add(button6);
             panel2.Controls.Add(button5);
             panel2.Controls.Add(pictureBox3);
             panel2.Controls.Add(button4);
@@ -65,7 +67,7 @@
             panel2.Dock = DockStyle.Left;
             panel2.Location = new Point(0, 0);
             panel2.Name = "panel2";
-            panel2.Size = new Size(193, 562);
+            panel2.Size = new Size(193, 606);
             panel2.TabIndex = 6;
             // 
             // button5
@@ -160,11 +162,28 @@
             label1.TabIndex = 7;
             label1.Text = "Menu Empleado";
             // 
+            // button6
+            // 
+            button6.BackColor = Color.AliceBlue;
+            button6.Cursor = Cursors.Hand;
+            button6.FlatAppearance.BorderSize = 0;
+            button6.FlatStyle = FlatStyle.Flat;
+            button6.Font = new Font("Tahoma", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button6.ForeColor = Color.DarkRed;
+            button6.Image = (Image)resources.GetObject("button6.Image");
+            button6.ImageAlign = ContentAlignment.MiddleLeft;
+            button6.Location = new Point(12, 530);
+            button6.Name = "button6";
+            button6.Size = new Size(168, 52);
+            button6.TabIndex = 8;
+            button6.Text = "   Salir";
+            button6.UseVisualStyleBackColor = false;
+            // 
             // menuEmpleado
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(966, 562);
+            ClientSize = new Size(966, 606);
             Controls.Add(label1);
             Controls.Add(pictureBox2);
             Controls.Add(panel2);
@@ -189,5 +208,6 @@
         private Button button3;
         private Button button4;
         private Button button5;
+        private Button button6;
     }
 }

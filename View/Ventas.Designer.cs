@@ -31,8 +31,23 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Ventas));
             panel1 = new Panel();
             panel4 = new Panel();
+            button4 = new Button();
+            button3 = new Button();
+            button2 = new Button();
             dataGridView1 = new DataGridView();
+            IDVenta = new DataGridViewTextBoxColumn();
+            IDCliente = new DataGridViewTextBoxColumn();
+            IDEmpleado = new DataGridViewTextBoxColumn();
+            Metodopago = new DataGridViewTextBoxColumn();
+            Fecha = new DataGridViewTextBoxColumn();
+            Total = new DataGridViewTextBoxColumn();
             panel3 = new Panel();
+            textBox5 = new TextBox();
+            label7 = new Label();
+            label6 = new Label();
+            textBox4 = new TextBox();
+            label5 = new Label();
+            textBox3 = new TextBox();
             label4 = new Label();
             label3 = new Label();
             textBox2 = new TextBox();
@@ -41,21 +56,6 @@
             panel2 = new Panel();
             button1 = new Button();
             label1 = new Label();
-            textBox3 = new TextBox();
-            label5 = new Label();
-            textBox4 = new TextBox();
-            label6 = new Label();
-            label7 = new Label();
-            textBox5 = new TextBox();
-            IDVenta = new DataGridViewTextBoxColumn();
-            IDCliente = new DataGridViewTextBoxColumn();
-            IDEmpleado = new DataGridViewTextBoxColumn();
-            Metodopago = new DataGridViewTextBoxColumn();
-            Fecha = new DataGridViewTextBoxColumn();
-            Total = new DataGridViewTextBoxColumn();
-            button2 = new Button();
-            button3 = new Button();
-            button4 = new Button();
             panel1.SuspendLayout();
             panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
@@ -69,9 +69,11 @@
             panel1.Controls.Add(panel3);
             panel1.Controls.Add(panel2);
             panel1.Location = new Point(1, 1);
+            panel1.Margin = new Padding(3, 2, 3, 2);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1233, 562);
+            panel1.Size = new Size(1079, 424);
             panel1.TabIndex = 0;
+            panel1.Paint += panel1_Paint;
             // 
             // panel4
             // 
@@ -80,165 +82,53 @@
             panel4.Controls.Add(button3);
             panel4.Controls.Add(button2);
             panel4.Controls.Add(dataGridView1);
-            panel4.Location = new Point(352, 130);
+            panel4.Location = new Point(308, 98);
+            panel4.Margin = new Padding(3, 2, 3, 2);
             panel4.Name = "panel4";
-            panel4.Size = new Size(850, 388);
+            panel4.Size = new Size(744, 291);
             panel4.TabIndex = 2;
+            // 
+            // button4
+            // 
+            button4.Image = (Image)resources.GetObject("button4.Image");
+            button4.Location = new Point(550, 237);
+            button4.Margin = new Padding(3, 2, 3, 2);
+            button4.Name = "button4";
+            button4.Size = new Size(64, 52);
+            button4.TabIndex = 3;
+            button4.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            button3.BackgroundImage = Properties.Resources.emblemunreadable_934871;
+            button3.Location = new Point(351, 237);
+            button3.Margin = new Padding(3, 2, 3, 2);
+            button3.Name = "button3";
+            button3.Size = new Size(60, 52);
+            button3.TabIndex = 2;
+            button3.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            button2.BackgroundImage = Properties.Resources._1486564412_plus_81511;
+            button2.Location = new Point(134, 237);
+            button2.Margin = new Padding(3, 2, 3, 2);
+            button2.Name = "button2";
+            button2.Size = new Size(59, 52);
+            button2.TabIndex = 1;
+            button2.UseVisualStyleBackColor = true;
             // 
             // dataGridView1
             // 
             dataGridView1.BackgroundColor = SystemColors.ControlLight;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Columns.AddRange(new DataGridViewColumn[] { IDVenta, IDCliente, IDEmpleado, Metodopago, Fecha, Total });
-            dataGridView1.Location = new Point(31, 25);
+            dataGridView1.Location = new Point(3, 14);
+            dataGridView1.Margin = new Padding(3, 2, 3, 2);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(786, 271);
+            dataGridView1.Size = new Size(688, 203);
             dataGridView1.TabIndex = 0;
-            // 
-            // panel3
-            // 
-            panel3.BackColor = Color.DarkRed;
-            panel3.Controls.Add(textBox5);
-            panel3.Controls.Add(label7);
-            panel3.Controls.Add(label6);
-            panel3.Controls.Add(textBox4);
-            panel3.Controls.Add(label5);
-            panel3.Controls.Add(textBox3);
-            panel3.Controls.Add(label4);
-            panel3.Controls.Add(label3);
-            panel3.Controls.Add(textBox2);
-            panel3.Controls.Add(label2);
-            panel3.Controls.Add(textBox1);
-            panel3.Dock = DockStyle.Left;
-            panel3.Location = new Point(0, 87);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(306, 475);
-            panel3.TabIndex = 1;
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label4.ForeColor = SystemColors.ButtonFace;
-            label4.Location = new Point(43, 15);
-            label4.Name = "label4";
-            label4.Size = new Size(88, 31);
-            label4.TabIndex = 4;
-            label4.Text = "Ventas";
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Location = new Point(33, 136);
-            label3.Name = "label3";
-            label3.Size = new Size(73, 20);
-            label3.TabIndex = 3;
-            label3.Text = "IDCliente:";
-            // 
-            // textBox2
-            // 
-            textBox2.Location = new Point(33, 159);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(215, 27);
-            textBox2.TabIndex = 2;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new Point(33, 68);
-            label2.Name = "label2";
-            label2.Size = new Size(64, 20);
-            label2.TabIndex = 1;
-            label2.Text = "IDVenta:";
-            // 
-            // textBox1
-            // 
-            textBox1.Location = new Point(33, 91);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(215, 27);
-            textBox1.TabIndex = 0;
-            // 
-            // panel2
-            // 
-            panel2.BackColor = Color.DarkRed;
-            panel2.Controls.Add(button1);
-            panel2.Controls.Add(label1);
-            panel2.Dock = DockStyle.Top;
-            panel2.Location = new Point(0, 0);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(1233, 87);
-            panel2.TabIndex = 0;
-            // 
-            // button1
-            // 
-            button1.BackColor = Color.DarkRed;
-            button1.ForeColor = Color.DarkRed;
-            button1.Image = Properties.Resources.return_up_back_icon_234820;
-            button1.Location = new Point(0, 0);
-            button1.Name = "button1";
-            button1.Size = new Size(105, 87);
-            button1.TabIndex = 1;
-            button1.UseVisualStyleBackColor = false;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Impact", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.ForeColor = SystemColors.Control;
-            label1.Location = new Point(577, 19);
-            label1.Name = "label1";
-            label1.Size = new Size(138, 48);
-            label1.TabIndex = 0;
-            label1.Text = "Ventas";
-            // 
-            // textBox3
-            // 
-            textBox3.Location = new Point(33, 229);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(215, 27);
-            textBox3.TabIndex = 5;
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Location = new Point(33, 206);
-            label5.Name = "label5";
-            label5.Size = new Size(95, 20);
-            label5.TabIndex = 6;
-            label5.Text = "IDEmpleado:";
-            // 
-            // textBox4
-            // 
-            textBox4.Location = new Point(33, 303);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(215, 27);
-            textBox4.TabIndex = 7;
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Location = new Point(33, 280);
-            label6.Name = "label6";
-            label6.Size = new Size(140, 20);
-            label6.TabIndex = 8;
-            label6.Text = "IDMetodo de pago:";
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.Location = new Point(33, 356);
-            label7.Name = "label7";
-            label7.Size = new Size(50, 20);
-            label7.TabIndex = 9;
-            label7.Text = "Fecha:";
-            // 
-            // textBox5
-            // 
-            textBox5.Location = new Point(31, 381);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(217, 27);
-            textBox5.TabIndex = 10;
             // 
             // IDVenta
             // 
@@ -282,39 +172,165 @@
             Total.Name = "Total";
             Total.Width = 125;
             // 
-            // button2
+            // panel3
             // 
-            button2.BackgroundImage = Properties.Resources._1486564412_plus_81511;
-            button2.Location = new Point(153, 316);
-            button2.Name = "button2";
-            button2.Size = new Size(67, 69);
-            button2.TabIndex = 1;
-            button2.UseVisualStyleBackColor = true;
+            panel3.BackColor = Color.DarkRed;
+            panel3.Controls.Add(textBox5);
+            panel3.Controls.Add(label7);
+            panel3.Controls.Add(label6);
+            panel3.Controls.Add(textBox4);
+            panel3.Controls.Add(label5);
+            panel3.Controls.Add(textBox3);
+            panel3.Controls.Add(label4);
+            panel3.Controls.Add(label3);
+            panel3.Controls.Add(textBox2);
+            panel3.Controls.Add(label2);
+            panel3.Controls.Add(textBox1);
+            panel3.Dock = DockStyle.Left;
+            panel3.Location = new Point(0, 65);
+            panel3.Margin = new Padding(3, 2, 3, 2);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(268, 359);
+            panel3.TabIndex = 1;
             // 
-            // button3
+            // textBox5
             // 
-            button3.BackgroundImage = Properties.Resources.emblemunreadable_934871;
-            button3.Location = new Point(401, 316);
-            button3.Name = "button3";
-            button3.Size = new Size(69, 69);
-            button3.TabIndex = 2;
-            button3.UseVisualStyleBackColor = true;
+            textBox5.Location = new Point(27, 286);
+            textBox5.Margin = new Padding(3, 2, 3, 2);
+            textBox5.Name = "textBox5";
+            textBox5.Size = new Size(190, 23);
+            textBox5.TabIndex = 10;
             // 
-            // button4
+            // label7
             // 
-            button4.Image = (Image)resources.GetObject("button4.Image");
-            button4.Location = new Point(628, 316);
-            button4.Name = "button4";
-            button4.Size = new Size(73, 69);
-            button4.TabIndex = 3;
-            button4.UseVisualStyleBackColor = true;
+            label7.AutoSize = true;
+            label7.Location = new Point(29, 267);
+            label7.Name = "label7";
+            label7.Size = new Size(41, 15);
+            label7.TabIndex = 9;
+            label7.Text = "Fecha:";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Location = new Point(29, 210);
+            label6.Name = "label6";
+            label6.Size = new Size(109, 15);
+            label6.TabIndex = 8;
+            label6.Text = "IDMetodo de pago:";
+            // 
+            // textBox4
+            // 
+            textBox4.Location = new Point(29, 227);
+            textBox4.Margin = new Padding(3, 2, 3, 2);
+            textBox4.Name = "textBox4";
+            textBox4.Size = new Size(189, 23);
+            textBox4.TabIndex = 7;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(29, 154);
+            label5.Name = "label5";
+            label5.Size = new Size(74, 15);
+            label5.TabIndex = 6;
+            label5.Text = "IDEmpleado:";
+            // 
+            // textBox3
+            // 
+            textBox3.Location = new Point(29, 172);
+            textBox3.Margin = new Padding(3, 2, 3, 2);
+            textBox3.Name = "textBox3";
+            textBox3.Size = new Size(189, 23);
+            textBox3.TabIndex = 5;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label4.ForeColor = SystemColors.ButtonFace;
+            label4.Location = new Point(38, 11);
+            label4.Name = "label4";
+            label4.Size = new Size(72, 25);
+            label4.TabIndex = 4;
+            label4.Text = "Ventas";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(29, 102);
+            label3.Name = "label3";
+            label3.Size = new Size(58, 15);
+            label3.TabIndex = 3;
+            label3.Text = "IDCliente:";
+            // 
+            // textBox2
+            // 
+            textBox2.Location = new Point(29, 119);
+            textBox2.Margin = new Padding(3, 2, 3, 2);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(189, 23);
+            textBox2.TabIndex = 2;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(29, 51);
+            label2.Name = "label2";
+            label2.Size = new Size(50, 15);
+            label2.TabIndex = 1;
+            label2.Text = "IDVenta:";
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(29, 68);
+            textBox1.Margin = new Padding(3, 2, 3, 2);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(189, 23);
+            textBox1.TabIndex = 0;
+            // 
+            // panel2
+            // 
+            panel2.BackColor = Color.DarkRed;
+            panel2.Controls.Add(button1);
+            panel2.Controls.Add(label1);
+            panel2.Dock = DockStyle.Top;
+            panel2.Location = new Point(0, 0);
+            panel2.Margin = new Padding(3, 2, 3, 2);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(1079, 65);
+            panel2.TabIndex = 0;
+            // 
+            // button1
+            // 
+            button1.BackColor = Color.DarkRed;
+            button1.ForeColor = Color.DarkRed;
+            button1.Image = Properties.Resources.return_up_back_icon_234820;
+            button1.Location = new Point(0, 0);
+            button1.Margin = new Padding(3, 2, 3, 2);
+            button1.Name = "button1";
+            button1.Size = new Size(92, 65);
+            button1.TabIndex = 1;
+            button1.UseVisualStyleBackColor = false;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Impact", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.ForeColor = SystemColors.Control;
+            label1.Location = new Point(505, 14);
+            label1.Name = "label1";
+            label1.Size = new Size(113, 39);
+            label1.TabIndex = 0;
+            label1.Text = "Ventas";
             // 
             // Ventas
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1238, 566);
+            ClientSize = new Size(1083, 424);
             Controls.Add(panel1);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "Ventas";
             Text = "Editor_Productos";
             panel1.ResumeLayout(false);

@@ -40,6 +40,7 @@
             Telefono = new DataGridViewTextBoxColumn();
             Correo = new DataGridViewTextBoxColumn();
             panel2 = new Panel();
+            textBox7 = new TextBox();
             label10 = new Label();
             textBox6 = new TextBox();
             label9 = new Label();
@@ -59,9 +60,7 @@
             pictureBox2 = new PictureBox();
             label5 = new Label();
             button2 = new Button();
-            button3 = new Button();
             button4 = new Button();
-            textBox7 = new TextBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             panel2.SuspendLayout();
@@ -163,6 +162,13 @@
             panel2.Name = "panel2";
             panel2.Size = new Size(346, 509);
             panel2.TabIndex = 6;
+            // 
+            // textBox7
+            // 
+            textBox7.Location = new Point(158, 391);
+            textBox7.Name = "textBox7";
+            textBox7.Size = new Size(162, 23);
+            textBox7.TabIndex = 21;
             // 
             // label10
             // 
@@ -363,26 +369,12 @@
             button2.ForeColor = Color.Black;
             button2.Image = (Image)resources.GetObject("button2.Image");
             button2.ImageAlign = ContentAlignment.MiddleLeft;
-            button2.Location = new Point(451, 558);
+            button2.Location = new Point(584, 554);
             button2.Name = "button2";
             button2.Size = new Size(160, 46);
             button2.TabIndex = 13;
             button2.Text = "     Actualizar";
             button2.UseVisualStyleBackColor = false;
-            // 
-            // button3
-            // 
-            button3.BackColor = Color.White;
-            button3.Font = new Font("Tahoma", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button3.ForeColor = Color.Black;
-            button3.Image = (Image)resources.GetObject("button3.Image");
-            button3.ImageAlign = ContentAlignment.MiddleLeft;
-            button3.Location = new Point(701, 558);
-            button3.Name = "button3";
-            button3.Size = new Size(153, 46);
-            button3.TabIndex = 14;
-            button3.Text = "     Eliminar";
-            button3.UseVisualStyleBackColor = false;
             // 
             // button4
             // 
@@ -394,13 +386,6 @@
             button4.UseVisualStyleBackColor = true;
             button4.Click += button4_Click;
             // 
-            // textBox7
-            // 
-            textBox7.Location = new Point(158, 391);
-            textBox7.Name = "textBox7";
-            textBox7.Size = new Size(162, 23);
-            textBox7.TabIndex = 21;
-            // 
             // Empleados
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -408,7 +393,6 @@
             BackColor = Color.Gainsboro;
             ClientSize = new Size(964, 634);
             Controls.Add(button4);
-            Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(label5);
             Controls.Add(panel2);
@@ -460,7 +444,6 @@
         private TextBox textBox5;
         private Label label8;
         private Button button2;
-        private Button button3;
         private Button button4;
         private TextBox textBox7;
     }
