@@ -21,5 +21,12 @@ namespace TiendaVideojuegos.View
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            menuEmpleado menu = new menuEmpleado();
+            menu.Show();
+            this.Hide();
+        }
     }
 }

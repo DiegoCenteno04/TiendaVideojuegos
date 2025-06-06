@@ -10,17 +10,22 @@ using System.Windows.Forms;
 
 namespace TiendaVideojuegos.View
 {
-    public partial class Detalle_Venta : Form
+    public partial class ProductosEmpleados : Form
     {
-        public Detalle_Venta()
+        public ProductosEmpleados()
         {
             InitializeComponent();
         }
 
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
-            menuEmpleado menu = new menuEmpleado(); 
-            menu.Show(); 
+            menuEmpleado menu = new menuEmpleado();
+            menu.Show();
             this.Hide();
         }
     }

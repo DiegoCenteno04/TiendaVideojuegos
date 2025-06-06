@@ -39,6 +39,8 @@
             Fecha = new DataGridViewTextBoxColumn();
             Total = new DataGridViewTextBoxColumn();
             panel3 = new Panel();
+            label4 = new Label();
+            textBox6 = new TextBox();
             textBox5 = new TextBox();
             label7 = new Label();
             label6 = new Label();
@@ -52,8 +54,6 @@
             panel2 = new Panel();
             button1 = new Button();
             label1 = new Label();
-            textBox6 = new TextBox();
-            label4 = new Label();
             panel1.SuspendLayout();
             panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
@@ -165,6 +165,23 @@
             panel3.Size = new Size(306, 478);
             panel3.TabIndex = 1;
             // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.ForeColor = SystemColors.ButtonHighlight;
+            label4.Location = new Point(36, 381);
+            label4.Name = "label4";
+            label4.Size = new Size(45, 20);
+            label4.TabIndex = 12;
+            label4.Text = "Total:";
+            // 
+            // textBox6
+            // 
+            textBox6.Location = new Point(36, 404);
+            textBox6.Name = "textBox6";
+            textBox6.Size = new Size(217, 27);
+            textBox6.TabIndex = 11;
+            // 
             // textBox5
             // 
             textBox5.Location = new Point(36, 330);
@@ -271,6 +288,7 @@
             button1.Size = new Size(105, 87);
             button1.TabIndex = 1;
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // label1
             // 
@@ -282,23 +300,6 @@
             label1.Size = new Size(138, 48);
             label1.TabIndex = 0;
             label1.Text = "Ventas";
-            // 
-            // textBox6
-            // 
-            textBox6.Location = new Point(36, 404);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(217, 27);
-            textBox6.TabIndex = 11;
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.ForeColor = SystemColors.ButtonHighlight;
-            label4.Location = new Point(36, 381);
-            label4.Name = "label4";
-            label4.Size = new Size(45, 20);
-            label4.TabIndex = 12;
-            label4.Text = "Total:";
             // 
             // Ventas
             // 
