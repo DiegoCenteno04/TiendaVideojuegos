@@ -33,23 +33,30 @@
             label1 = new Label();
             button1 = new Button();
             panel2 = new Panel();
-            textBox6 = new TextBox();
-            textBox5 = new TextBox();
-            textBox4 = new TextBox();
-            textBox3 = new TextBox();
-            textBox2 = new TextBox();
-            textBox1 = new TextBox();
+            txtimagen = new TextBox();
+            label6 = new Label();
+            txtcantidad = new TextBox();
+            txtprecio = new TextBox();
+            label5 = new Label();
+            label2 = new Label();
+            txtdescripcion = new TextBox();
+            txtnombre = new TextBox();
+            txtID4 = new TextBox();
+            txtID3 = new TextBox();
+            txtID2 = new TextBox();
+            txtID = new TextBox();
             label10 = new Label();
             label9 = new Label();
             label3 = new Label();
             label8 = new Label();
             label4 = new Label();
             label7 = new Label();
-            dataGridView1 = new DataGridView();
+            tablaproducto = new DataGridView();
             button2 = new Button();
+            button3 = new Button();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)tablaproducto).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -91,12 +98,18 @@
             // panel2
             // 
             panel2.BackColor = Color.DarkRed;
-            panel2.Controls.Add(textBox6);
-            panel2.Controls.Add(textBox5);
-            panel2.Controls.Add(textBox4);
-            panel2.Controls.Add(textBox3);
-            panel2.Controls.Add(textBox2);
-            panel2.Controls.Add(textBox1);
+            panel2.Controls.Add(txtimagen);
+            panel2.Controls.Add(label6);
+            panel2.Controls.Add(txtcantidad);
+            panel2.Controls.Add(txtprecio);
+            panel2.Controls.Add(label5);
+            panel2.Controls.Add(label2);
+            panel2.Controls.Add(txtdescripcion);
+            panel2.Controls.Add(txtnombre);
+            panel2.Controls.Add(txtID4);
+            panel2.Controls.Add(txtID3);
+            panel2.Controls.Add(txtID2);
+            panel2.Controls.Add(txtID);
             panel2.Controls.Add(label10);
             panel2.Controls.Add(label9);
             panel2.Controls.Add(label3);
@@ -106,56 +119,116 @@
             panel2.Location = new Point(-2, 74);
             panel2.Margin = new Padding(3, 2, 3, 2);
             panel2.Name = "panel2";
-            panel2.Size = new Size(458, 404);
+            panel2.Size = new Size(458, 448);
             panel2.TabIndex = 1;
             // 
-            // textBox6
+            // txtimagen
             // 
-            textBox6.Location = new Point(200, 306);
-            textBox6.Margin = new Padding(3, 2, 3, 2);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(232, 23);
-            textBox6.TabIndex = 47;
+            txtimagen.Location = new Point(200, 406);
+            txtimagen.Margin = new Padding(3, 2, 3, 2);
+            txtimagen.Name = "txtimagen";
+            txtimagen.Size = new Size(232, 23);
+            txtimagen.TabIndex = 53;
             // 
-            // textBox5
+            // label6
             // 
-            textBox5.Location = new Point(200, 249);
-            textBox5.Margin = new Padding(3, 2, 3, 2);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(232, 23);
-            textBox5.TabIndex = 46;
+            label6.AutoSize = true;
+            label6.BackColor = Color.White;
+            label6.Font = new Font("Tahoma", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label6.ForeColor = Color.Black;
+            label6.Location = new Point(86, 406);
+            label6.Name = "label6";
+            label6.Size = new Size(82, 19);
+            label6.TabIndex = 52;
+            label6.Text = "Imagen: ";
             // 
-            // textBox4
+            // txtcantidad
             // 
-            textBox4.Location = new Point(200, 192);
-            textBox4.Margin = new Padding(3, 2, 3, 2);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(232, 23);
-            textBox4.TabIndex = 45;
+            txtcantidad.Location = new Point(200, 365);
+            txtcantidad.Margin = new Padding(3, 2, 3, 2);
+            txtcantidad.Name = "txtcantidad";
+            txtcantidad.Size = new Size(232, 23);
+            txtcantidad.TabIndex = 51;
             // 
-            // textBox3
+            // txtprecio
             // 
-            textBox3.Location = new Point(200, 142);
-            textBox3.Margin = new Padding(3, 2, 3, 2);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(232, 23);
-            textBox3.TabIndex = 44;
+            txtprecio.Location = new Point(200, 331);
+            txtprecio.Margin = new Padding(3, 2, 3, 2);
+            txtprecio.Name = "txtprecio";
+            txtprecio.Size = new Size(232, 23);
+            txtprecio.TabIndex = 50;
             // 
-            // textBox2
+            // label5
             // 
-            textBox2.Location = new Point(200, 91);
-            textBox2.Margin = new Padding(3, 2, 3, 2);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(232, 23);
-            textBox2.TabIndex = 43;
+            label5.AutoSize = true;
+            label5.BackColor = Color.White;
+            label5.Font = new Font("Tahoma", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label5.ForeColor = Color.Black;
+            label5.Location = new Point(86, 369);
+            label5.Name = "label5";
+            label5.Size = new Size(93, 19);
+            label5.TabIndex = 49;
+            label5.Text = "Cantidad: ";
             // 
-            // textBox1
+            // label2
             // 
-            textBox1.Location = new Point(200, 33);
-            textBox1.Margin = new Padding(3, 2, 3, 2);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(232, 23);
-            textBox1.TabIndex = 42;
+            label2.AutoSize = true;
+            label2.BackColor = Color.White;
+            label2.Font = new Font("Tahoma", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.ForeColor = Color.Black;
+            label2.Location = new Point(108, 335);
+            label2.Name = "label2";
+            label2.Size = new Size(71, 19);
+            label2.TabIndex = 48;
+            label2.Text = "Precio: ";
+            // 
+            // txtdescripcion
+            // 
+            txtdescripcion.Location = new Point(200, 292);
+            txtdescripcion.Margin = new Padding(3, 2, 3, 2);
+            txtdescripcion.Name = "txtdescripcion";
+            txtdescripcion.Size = new Size(232, 23);
+            txtdescripcion.TabIndex = 47;
+            // 
+            // txtnombre
+            // 
+            txtnombre.Location = new Point(200, 245);
+            txtnombre.Margin = new Padding(3, 2, 3, 2);
+            txtnombre.Name = "txtnombre";
+            txtnombre.Size = new Size(232, 23);
+            txtnombre.TabIndex = 46;
+            // 
+            // txtID4
+            // 
+            txtID4.Location = new Point(200, 192);
+            txtID4.Margin = new Padding(3, 2, 3, 2);
+            txtID4.Name = "txtID4";
+            txtID4.Size = new Size(232, 23);
+            txtID4.TabIndex = 45;
+            // 
+            // txtID3
+            // 
+            txtID3.Location = new Point(200, 142);
+            txtID3.Margin = new Padding(3, 2, 3, 2);
+            txtID3.Name = "txtID3";
+            txtID3.Size = new Size(232, 23);
+            txtID3.TabIndex = 44;
+            // 
+            // txtID2
+            // 
+            txtID2.Location = new Point(200, 91);
+            txtID2.Margin = new Padding(3, 2, 3, 2);
+            txtID2.Name = "txtID2";
+            txtID2.Size = new Size(232, 23);
+            txtID2.TabIndex = 43;
+            // 
+            // txtID
+            // 
+            txtID.Location = new Point(200, 33);
+            txtID.Margin = new Padding(3, 2, 3, 2);
+            txtID.Name = "txtID";
+            txtID.Size = new Size(232, 23);
+            txtID.TabIndex = 42;
             // 
             // label10
             // 
@@ -163,7 +236,7 @@
             label10.BackColor = Color.White;
             label10.Font = new Font("Tahoma", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label10.ForeColor = Color.Black;
-            label10.Location = new Point(58, 305);
+            label10.Location = new Point(47, 146);
             label10.Name = "label10";
             label10.Size = new Size(128, 19);
             label10.TabIndex = 41;
@@ -175,7 +248,7 @@
             label9.BackColor = Color.White;
             label9.Font = new Font("Tahoma", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label9.ForeColor = Color.Black;
-            label9.Location = new Point(70, 248);
+            label9.Location = new Point(48, 91);
             label9.Name = "label9";
             label9.Size = new Size(117, 19);
             label9.TabIndex = 40;
@@ -199,11 +272,11 @@
             label8.BackColor = Color.White;
             label8.Font = new Font("Tahoma", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label8.ForeColor = Color.Black;
-            label8.Location = new Point(65, 192);
+            label8.Location = new Point(62, 291);
             label8.Name = "label8";
-            label8.Size = new Size(121, 19);
+            label8.Size = new Size(113, 19);
             label8.TabIndex = 39;
-            label8.Text = "IdProveedor: ";
+            label8.Text = "Descripcion: ";
             label8.Click += label8_Click;
             // 
             // label4
@@ -212,7 +285,7 @@
             label4.BackColor = Color.White;
             label4.Font = new Font("Tahoma", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label4.ForeColor = Color.Black;
-            label4.Location = new Point(24, 142);
+            label4.Location = new Point(17, 249);
             label4.Name = "label4";
             label4.Size = new Size(162, 19);
             label4.TabIndex = 37;
@@ -224,21 +297,21 @@
             label7.BackColor = Color.White;
             label7.Font = new Font("Tahoma", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label7.ForeColor = Color.Black;
-            label7.Location = new Point(12, 95);
+            label7.Location = new Point(17, 196);
             label7.Name = "label7";
             label7.Size = new Size(175, 19);
             label7.TabIndex = 38;
             label7.Text = "IdEstado Producto : ";
             // 
-            // dataGridView1
+            // tablaproducto
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(600, 114);
-            dataGridView1.Margin = new Padding(3, 2, 3, 2);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(455, 287);
-            dataGridView1.TabIndex = 2;
+            tablaproducto.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            tablaproducto.Location = new Point(600, 114);
+            tablaproducto.Margin = new Padding(3, 2, 3, 2);
+            tablaproducto.Name = "tablaproducto";
+            tablaproducto.RowHeadersWidth = 51;
+            tablaproducto.Size = new Size(455, 287);
+            tablaproducto.TabIndex = 2;
             // 
             // button2
             // 
@@ -249,14 +322,31 @@
             button2.Size = new Size(90, 59);
             button2.TabIndex = 3;
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
+            // 
+            // button3
+            // 
+            button3.BackColor = Color.White;
+            button3.Font = new Font("Tahoma", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button3.ForeColor = Color.Black;
+            button3.Image = (Image)resources.GetObject("button3.Image");
+            button3.ImageAlign = ContentAlignment.MiddleLeft;
+            button3.Location = new Point(863, 423);
+            button3.Name = "button3";
+            button3.Size = new Size(160, 46);
+            button3.TabIndex = 15;
+            button3.Text = "     Actualizar";
+            button3.UseVisualStyleBackColor = false;
+            button3.Click += button3_Click;
             // 
             // Productos
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1099, 479);
+            ClientSize = new Size(1099, 519);
+            Controls.Add(button3);
             Controls.Add(button2);
-            Controls.Add(dataGridView1);
+            Controls.Add(tablaproducto);
             Controls.Add(panel1);
             Controls.Add(panel2);
             Margin = new Padding(3, 2, 3, 2);
@@ -266,7 +356,7 @@
             panel1.PerformLayout();
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)tablaproducto).EndInit();
             ResumeLayout(false);
         }
 
@@ -275,20 +365,27 @@
         private Panel panel1;
         private Button button1;
         private Panel panel2;
-        private TextBox textBox6;
-        private TextBox textBox5;
-        private TextBox textBox4;
-        private TextBox textBox3;
-        private TextBox textBox2;
-        private TextBox textBox1;
+        private TextBox txtdescripcion;
+        private TextBox txtnombre;
+        private TextBox txtID4;
+        private TextBox txtID3;
+        private TextBox txtID2;
+        private TextBox txtID;
         private Label label10;
         private Label label9;
         private Label label3;
         private Label label8;
         private Label label4;
         private Label label7;
-        private DataGridView dataGridView1;
+        private DataGridView tablaproducto;
         private Label label1;
         private Button button2;
+        private TextBox txtcantidad;
+        private TextBox txtprecio;
+        private Label label5;
+        private Label label2;
+        private TextBox txtimagen;
+        private Label label6;
+        private Button button3;
     }
 }

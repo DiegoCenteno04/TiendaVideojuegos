@@ -31,30 +31,23 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Empleados));
             pictureBox1 = new PictureBox();
             label1 = new Label();
-            dataGridView1 = new DataGridView();
-            IdEmpleado = new DataGridViewTextBoxColumn();
-            IdCargo = new DataGridViewTextBoxColumn();
-            IdEstadoEmpleado = new DataGridViewTextBoxColumn();
-            Nombre = new DataGridViewTextBoxColumn();
-            Apellido = new DataGridViewTextBoxColumn();
-            Telefono = new DataGridViewTextBoxColumn();
-            Correo = new DataGridViewTextBoxColumn();
+            tablaempleados = new DataGridView();
             panel2 = new Panel();
-            textBox7 = new TextBox();
+            txtcorreo = new TextBox();
             label10 = new Label();
-            textBox6 = new TextBox();
+            txttelefono = new TextBox();
             label9 = new Label();
-            textBox5 = new TextBox();
+            txtapellido = new TextBox();
             label8 = new Label();
             label7 = new Label();
-            textBox4 = new TextBox();
+            txtID3 = new TextBox();
             label6 = new Label();
-            textBox3 = new TextBox();
+            txtID2 = new TextBox();
             button1 = new Button();
-            textBox2 = new TextBox();
+            txtnombre = new TextBox();
             label4 = new Label();
             label3 = new Label();
-            textBox1 = new TextBox();
+            txtID = new TextBox();
             label2 = new Label();
             button5 = new Button();
             pictureBox2 = new PictureBox();
@@ -62,7 +55,7 @@
             button2 = new Button();
             button4 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)tablaempleados).BeginInit();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
@@ -87,75 +80,33 @@
             label1.TabIndex = 4;
             label1.Text = "Empleados";
             // 
-            // dataGridView1
+            // tablaempleados
             // 
-            dataGridView1.BackgroundColor = Color.White;
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { IdEmpleado, IdCargo, IdEstadoEmpleado, Nombre, Apellido, Telefono, Correo });
-            dataGridView1.Location = new Point(406, 218);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(528, 321);
-            dataGridView1.TabIndex = 2;
-            // 
-            // IdEmpleado
-            // 
-            IdEmpleado.HeaderText = "IdEmpleado";
-            IdEmpleado.Name = "IdEmpleado";
-            IdEmpleado.Width = 75;
-            // 
-            // IdCargo
-            // 
-            IdCargo.HeaderText = "IdCargo";
-            IdCargo.Name = "IdCargo";
-            IdCargo.Width = 75;
-            // 
-            // IdEstadoEmpleado
-            // 
-            IdEstadoEmpleado.HeaderText = "IdEstadoEmpleado";
-            IdEstadoEmpleado.Name = "IdEstadoEmpleado";
-            IdEstadoEmpleado.Width = 115;
-            // 
-            // Nombre
-            // 
-            Nombre.HeaderText = "Nombre";
-            Nombre.Name = "Nombre";
-            Nombre.Width = 150;
-            // 
-            // Apellido
-            // 
-            Apellido.HeaderText = "Apellido";
-            Apellido.Name = "Apellido";
-            Apellido.Width = 150;
-            // 
-            // Telefono
-            // 
-            Telefono.HeaderText = "Telefono";
-            Telefono.Name = "Telefono";
-            // 
-            // Correo
-            // 
-            Correo.HeaderText = "Correo";
-            Correo.Name = "Correo";
-            Correo.Width = 200;
+            tablaempleados.BackgroundColor = Color.White;
+            tablaempleados.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            tablaempleados.Location = new Point(406, 218);
+            tablaempleados.Name = "tablaempleados";
+            tablaempleados.Size = new Size(528, 321);
+            tablaempleados.TabIndex = 2;
             // 
             // panel2
             // 
             panel2.BackColor = Color.DarkRed;
-            panel2.Controls.Add(textBox7);
+            panel2.Controls.Add(txtcorreo);
             panel2.Controls.Add(label10);
-            panel2.Controls.Add(textBox6);
+            panel2.Controls.Add(txttelefono);
             panel2.Controls.Add(label9);
-            panel2.Controls.Add(textBox5);
+            panel2.Controls.Add(txtapellido);
             panel2.Controls.Add(label8);
             panel2.Controls.Add(label7);
-            panel2.Controls.Add(textBox4);
+            panel2.Controls.Add(txtID3);
             panel2.Controls.Add(label6);
-            panel2.Controls.Add(textBox3);
+            panel2.Controls.Add(txtID2);
             panel2.Controls.Add(button1);
-            panel2.Controls.Add(textBox2);
+            panel2.Controls.Add(txtnombre);
             panel2.Controls.Add(label4);
             panel2.Controls.Add(label3);
-            panel2.Controls.Add(textBox1);
+            panel2.Controls.Add(txtID);
             panel2.Controls.Add(label2);
             panel2.Controls.Add(button5);
             panel2.Location = new Point(1, 125);
@@ -163,12 +114,12 @@
             panel2.Size = new Size(346, 509);
             panel2.TabIndex = 6;
             // 
-            // textBox7
+            // txtcorreo
             // 
-            textBox7.Location = new Point(158, 391);
-            textBox7.Name = "textBox7";
-            textBox7.Size = new Size(162, 23);
-            textBox7.TabIndex = 21;
+            txtcorreo.Location = new Point(158, 391);
+            txtcorreo.Name = "txtcorreo";
+            txtcorreo.Size = new Size(162, 23);
+            txtcorreo.TabIndex = 21;
             // 
             // label10
             // 
@@ -182,12 +133,12 @@
             label10.TabIndex = 20;
             label10.Text = "Correo: ";
             // 
-            // textBox6
+            // txttelefono
             // 
-            textBox6.Location = new Point(158, 350);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(162, 23);
-            textBox6.TabIndex = 19;
+            txttelefono.Location = new Point(158, 350);
+            txttelefono.Name = "txttelefono";
+            txttelefono.Size = new Size(162, 23);
+            txttelefono.TabIndex = 19;
             // 
             // label9
             // 
@@ -201,12 +152,12 @@
             label9.TabIndex = 18;
             label9.Text = "Telefono: ";
             // 
-            // textBox5
+            // txtapellido
             // 
-            textBox5.Location = new Point(158, 306);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(162, 23);
-            textBox5.TabIndex = 17;
+            txtapellido.Location = new Point(158, 306);
+            txtapellido.Name = "txtapellido";
+            txtapellido.Size = new Size(162, 23);
+            txtapellido.TabIndex = 17;
             // 
             // label8
             // 
@@ -233,12 +184,12 @@
             label7.Text = "IdEstado\r\nEmpleado: ";
             label7.Click += label7_Click;
             // 
-            // textBox4
+            // txtID3
             // 
-            textBox4.Location = new Point(158, 220);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(162, 23);
-            textBox4.TabIndex = 14;
+            txtID3.Location = new Point(158, 220);
+            txtID3.Name = "txtID3";
+            txtID3.Size = new Size(162, 23);
+            txtID3.TabIndex = 14;
             // 
             // label6
             // 
@@ -252,12 +203,12 @@
             label6.TabIndex = 13;
             label6.Text = "IdCargo: ";
             // 
-            // textBox3
+            // txtID2
             // 
-            textBox3.Location = new Point(158, 172);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(162, 23);
-            textBox3.TabIndex = 12;
+            txtID2.Location = new Point(158, 172);
+            txtID2.Name = "txtID2";
+            txtID2.Size = new Size(162, 23);
+            txtID2.TabIndex = 12;
             // 
             // button1
             // 
@@ -272,13 +223,14 @@
             button1.TabIndex = 11;
             button1.Text = "     Agregar";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
-            // textBox2
+            // txtnombre
             // 
-            textBox2.Location = new Point(158, 262);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(162, 23);
-            textBox2.TabIndex = 10;
+            txtnombre.Location = new Point(158, 262);
+            txtnombre.Name = "txtnombre";
+            txtnombre.Size = new Size(162, 23);
+            txtnombre.TabIndex = 10;
             // 
             // label4
             // 
@@ -304,12 +256,12 @@
             label3.TabIndex = 8;
             label3.Text = "IdEmpleado: ";
             // 
-            // textBox1
+            // txtID
             // 
-            textBox1.Location = new Point(158, 124);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(162, 23);
-            textBox1.TabIndex = 7;
+            txtID.Location = new Point(158, 124);
+            txtID.Name = "txtID";
+            txtID.Size = new Size(162, 23);
+            txtID.TabIndex = 7;
             // 
             // label2
             // 
@@ -375,6 +327,7 @@
             button2.TabIndex = 13;
             button2.Text = "     Actualizar";
             button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click_1;
             // 
             // button4
             // 
@@ -396,7 +349,7 @@
             Controls.Add(button2);
             Controls.Add(label5);
             Controls.Add(panel2);
-            Controls.Add(dataGridView1);
+            Controls.Add(tablaempleados);
             Controls.Add(label1);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
@@ -404,7 +357,7 @@
             Name = "Empleados";
             StartPosition = FormStartPosition.CenterScreen;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)tablaempleados).EndInit();
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
@@ -416,35 +369,28 @@
 
         private PictureBox pictureBox1;
         private Label label1;
-        private DataGridView dataGridView1;
+        private DataGridView tablaempleados;
         private Panel panel2;
         private Button button5;
         private PictureBox pictureBox2;
         private Label label3;
-        private TextBox textBox1;
+        private TextBox txtID;
         private Label label2;
         private Button button1;
-        private TextBox textBox2;
+        private TextBox txtnombre;
         private Label label4;
         private Label label5;
-        private DataGridViewTextBoxColumn IdEmpleado;
-        private DataGridViewTextBoxColumn IdCargo;
-        private DataGridViewTextBoxColumn IdEstadoEmpleado;
-        private DataGridViewTextBoxColumn Nombre;
-        private DataGridViewTextBoxColumn Apellido;
-        private DataGridViewTextBoxColumn Telefono;
-        private DataGridViewTextBoxColumn Correo;
         private Label label7;
-        private TextBox textBox4;
+        private TextBox txtID3;
         private Label label6;
-        private TextBox textBox3;
+        private TextBox txtID2;
         private Label label10;
-        private TextBox textBox6;
+        private TextBox txttelefono;
         private Label label9;
-        private TextBox textBox5;
+        private TextBox txtapellido;
         private Label label8;
         private Button button2;
         private Button button4;
-        private TextBox textBox7;
+        private TextBox txtcorreo;
     }
 }

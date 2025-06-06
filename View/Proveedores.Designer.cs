@@ -46,14 +46,9 @@ namespace TiendaVideojuegos.View
             button1 = new Button();
             folderBrowserDialog1 = new FolderBrowserDialog();
             panel2 = new Panel();
-            button3 = new Button();
             btnagregar = new Button();
             tablaproveedor = new DataGridView();
-            id = new DataGridViewTextBoxColumn();
-            nombre = new DataGridViewTextBoxColumn();
-            telefono = new DataGridViewTextBoxColumn();
-            correo = new DataGridViewTextBoxColumn();
-            direccion = new DataGridViewTextBoxColumn();
+            button3 = new Button();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel2.SuspendLayout();
@@ -221,16 +216,6 @@ namespace TiendaVideojuegos.View
             panel2.Size = new Size(991, 473);
             panel2.TabIndex = 3;
             // 
-            // button3
-            // 
-            button3.Image = Properties.Resources.emblemunreadable_934871;
-            button3.Location = new Point(725, 399);
-            button3.Margin = new Padding(3, 2, 3, 2);
-            button3.Name = "button3";
-            button3.Size = new Size(92, 58);
-            button3.TabIndex = 12;
-            button3.UseVisualStyleBackColor = true;
-            // 
             // btnagregar
             // 
             btnagregar.Image = Properties.Resources._1486564412_plus_815111;
@@ -245,39 +230,28 @@ namespace TiendaVideojuegos.View
             // tablaproveedor
             // 
             tablaproveedor.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            tablaproveedor.Columns.AddRange(new DataGridViewColumn[] { id, nombre, telefono, correo, direccion });
             tablaproveedor.Location = new Point(388, 111);
             tablaproveedor.Margin = new Padding(3, 2, 3, 2);
             tablaproveedor.Name = "tablaproveedor";
             tablaproveedor.RowHeadersWidth = 51;
             tablaproveedor.Size = new Size(533, 270);
             tablaproveedor.TabIndex = 10;
-            tablaproveedor.CellContentClick += this.tablaproveedor_CellContentClick;
+            tablaproveedor.CellContentClick += tablaproveedor_CellContentClick;
             // 
-            // id
+            // button3
             // 
-            id.HeaderText = "Id";
-            id.Name = "id";
-            // 
-            // nombre
-            // 
-            nombre.HeaderText = "NombreProveedor";
-            nombre.Name = "nombre";
-            // 
-            // telefono
-            // 
-            telefono.HeaderText = "Telefono";
-            telefono.Name = "telefono";
-            // 
-            // correo
-            // 
-            correo.HeaderText = "Correo";
-            correo.Name = "correo";
-            // 
-            // direccion
-            // 
-            direccion.HeaderText = "Direccion";
-            direccion.Name = "direccion";
+            button3.BackColor = Color.White;
+            button3.Font = new Font("Tahoma", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button3.ForeColor = Color.Black;
+            button3.Image = (Image)resources.GetObject("button3.Image");
+            button3.ImageAlign = ContentAlignment.MiddleLeft;
+            button3.Location = new Point(685, 399);
+            button3.Name = "button3";
+            button3.Size = new Size(160, 46);
+            button3.TabIndex = 15;
+            button3.Text = "     Actualizar";
+            button3.UseVisualStyleBackColor = false;
+            button3.Click += button3_Click;
             // 
             // Proveedores
             // 
@@ -322,13 +296,8 @@ namespace TiendaVideojuegos.View
         private TextBox txtcorreo;
         private Label label5;
         private TextBox txttelefono;
-        private Button button3;
         private Button btnagregar;
         private DataGridView tablaproveedor;
-        private DataGridViewTextBoxColumn id;
-        private DataGridViewTextBoxColumn nombre;
-        private DataGridViewTextBoxColumn telefono;
-        private DataGridViewTextBoxColumn correo;
-        private DataGridViewTextBoxColumn direccion;
+        private Button button3;
     }
 }

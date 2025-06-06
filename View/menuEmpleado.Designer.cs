@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(menuEmpleado));
             pictureBox2 = new PictureBox();
             panel2 = new Panel();
+            button6 = new Button();
             button5 = new Button();
             pictureBox3 = new PictureBox();
             button4 = new Button();
@@ -38,7 +39,6 @@
             button3 = new Button();
             button2 = new Button();
             label1 = new Label();
-            button6 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -70,6 +70,24 @@
             panel2.Size = new Size(193, 606);
             panel2.TabIndex = 6;
             // 
+            // button6
+            // 
+            button6.BackColor = Color.AliceBlue;
+            button6.Cursor = Cursors.Hand;
+            button6.FlatAppearance.BorderSize = 0;
+            button6.FlatStyle = FlatStyle.Flat;
+            button6.Font = new Font("Tahoma", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button6.ForeColor = Color.DarkRed;
+            button6.Image = (Image)resources.GetObject("button6.Image");
+            button6.ImageAlign = ContentAlignment.MiddleLeft;
+            button6.Location = new Point(12, 530);
+            button6.Name = "button6";
+            button6.Size = new Size(168, 52);
+            button6.TabIndex = 8;
+            button6.Text = "   Salir";
+            button6.UseVisualStyleBackColor = false;
+            button6.Click += button6_Click;
+            // 
             // button5
             // 
             button5.Font = new Font("Comic Sans MS", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
@@ -83,6 +101,7 @@
             button5.Text = "Inventario";
             button5.TextAlign = ContentAlignment.MiddleRight;
             button5.UseVisualStyleBackColor = true;
+            button5.Click += button5_Click;
             // 
             // pictureBox3
             // 
@@ -109,6 +128,7 @@
             button4.Text = "Detalle Venta";
             button4.TextAlign = ContentAlignment.MiddleRight;
             button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
             // 
             // button1
             // 
@@ -137,6 +157,7 @@
             button3.Text = "Ventas";
             button3.TextAlign = ContentAlignment.MiddleRight;
             button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // button2
             // 
@@ -151,6 +172,7 @@
             button2.Text = "Producto";
             button2.TextAlign = ContentAlignment.MiddleRight;
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // label1
             // 
@@ -161,23 +183,6 @@
             label1.Size = new Size(460, 65);
             label1.TabIndex = 7;
             label1.Text = "Menu Empleado";
-            // 
-            // button6
-            // 
-            button6.BackColor = Color.AliceBlue;
-            button6.Cursor = Cursors.Hand;
-            button6.FlatAppearance.BorderSize = 0;
-            button6.FlatStyle = FlatStyle.Flat;
-            button6.Font = new Font("Tahoma", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button6.ForeColor = Color.DarkRed;
-            button6.Image = (Image)resources.GetObject("button6.Image");
-            button6.ImageAlign = ContentAlignment.MiddleLeft;
-            button6.Location = new Point(12, 530);
-            button6.Name = "button6";
-            button6.Size = new Size(168, 52);
-            button6.TabIndex = 8;
-            button6.Text = "   Salir";
-            button6.UseVisualStyleBackColor = false;
             // 
             // menuEmpleado
             // 
